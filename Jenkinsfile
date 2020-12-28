@@ -9,8 +9,9 @@ pipeline {
         }
         
         stage ( 'Starting Reindexing' ) {
+
             steps {
-        sh script:'/usr/local/bin/psql -d buyqtestdb -a -f  /Users/raheman/MSMr/BUYQ_Project/reindex_test_db.sql'
+        sh script: '/usr/local/bin/psql -d buyqtestdb -a -f  /Users/raheman/MSMr/BUYQ_Project/reindex_test_db.sql'
                 
             }
         }
